@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAPJOT SINGH
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/cc8e6c0d84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Attribution link hidden for copyright compliance -->
+<a href="https://storyset.com/web" style="display:none;">Web illustrations by Storyset</a>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+
+                <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+            <i class="fas fa-solid fa-bars "onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-row">
+            <div class="profile-pic-wrapper">
+                <img src="img/cover.jpg" alt="Profile Picture">
+            </div>
+            <div class="header-text">
+                <p>Computer Science Student @ASU</p>
+                <h1>Hi, I'm <span>JAPJOT SINGH</span></h1> 
+                <div class="dynamic-text">
+                  <span id="typed-text"></span>
+                  <span class="cursor">|</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="vw btn btn2 btn4">View My Work</a>
+                    <a href="#contact" class="btn btn2 btn4">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+    </div>
+</div>
+
+<!-- -------------about section------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p>I'm a passionate Computer Science student at Arizona State University, deeply interested in technology, creative problem-solving, and making a tangible impact through innovation. With a foundation in programming, design, and communication, I aim to build solutions that are not only functional but meaningful. I value collaboration, adaptability, and continuous learning—and I'm always eager to bring fresh ideas to life.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python, Java, JavaScript, SQL</li>
+                        <li><span>Web Development</span><br>HTML, CSS, Flask, APIs</li>
+                        <li><span>Tools</span><br>MySQL, Adobe Suite, Google Suite, MS Office</li>
+                        <li><span>Soft Skills</span><br>Team communication, coordination, mentoring</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul> 
+                        <li class="ep1"><span> Campus Ambassador</span><br>
+                            <div class="location">Adobe, Remote | Feb 2025 - Present</div>
+                                <ul>
+                                    <li>Engage with the student body to promote Adobe products and creative tools through workshops and events.</li>
+                                    <li>Facilitate the integration of Adobe services within academic projects, enhancing creative output and productivity.</li>
+                                </ul>
+                        </li>
+                        <li class="ep2"><span> Marketing Officer</span><br>
+                            <div class="location">CS + Social Good Club at ASU | Sep 2024 - Present</div>
+                                <ul>
+                                    <li>Increased club visibility by 25% through coordinated marketing strategies and social media campaigns.</li>
+                                    <li>Drove a 20% rise in member engagement and event participation by creating digital assets (posters, graphics, videos).</li>
+                                    <li>Analyzed engagement metrics and adjusted strategies to optimize outreach effectiveness.</li>
+                                </ul>
+                        </li>
+                        <li class="ep3"><span> Communication Lead</span><br>
+                                <div class="location">EPICS Program at ASU | Aug 2023 - Dec 2023</div>
+                                    <ul>
+                                        <li>Coordinated communication efforts for an Anti-Tremor Parkinson's Glove project with 5+ stakeholders.</li>
+                                        <li>Maintained alignment among community partners, industry mentors, and subject matter experts.</li>
+                                        <li>Coordinated team updates using clear channels, reducing project delays and ensuring milestones were met.</li>
+                                    </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <div class="education-card">
+                    <ul>
+                        <li>
+                          <span>2023 – May 2027</span><br>
+                          Bachelor of Science in Computer Science, Arizona State University – Tempe, AZ<br>
+                          <em>GPA: 3.64 / 4.0</em><br>
+                          <ul >
+                            <li>New American University Scholar (Merit-based $13,500/year)</li>
+                            <li>Dean's List: Fall 2023, Spring 2024, Fall 2024</li>
+                            
+                          </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                
+                
+                
+    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------projects------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <h2><i class="fa-solid fa-microchip"></i> Anti-Tremor Parkinson's Glove</h2>
+                <p>A wearable device that detects and mitigates tremors in Parkinson's patients using functional electrical stimulation(FES).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2><i class="fa-solid fa-music"></i> Spotify Playlist Manager and Analyzer</h2>
+                <p>A tool to organize and analyze Spotify playlists using track features like tempo, mood, and genre via the Spotify Web API.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2><i class="fas fa-users"></i> "Empathy_Unites" Social Media Platform</h2>
+                <p>Built and expanded an online community focused on veganism and ethical lifestyle choices through consistent, targeted content creation and digital marketing strategies. Boosted user engagement by 30% (likes, shares, and comments) within a month.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------contact section------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> japjots18@gmail.com</p>  
+                <p><i class="fa-solid fa-phone"></i> +1 623 273 6288</p>
+                <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/japjot-singh-811910281"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/japjot-singh"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/japjot_singh/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="Email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Japjot Singh</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+    
+<script> 
+    var sidemenu=document.querySelector("#sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-150px";
+    }
+
+</script>
+
+<script>
+  const phrases = [
+    "I write code with purpose",
+    "I solve problems with design",
+    "I build for impact",
+    "I create intuitive tools",
+    "I bring ideas to life"
+  ];
+
+  let currentPhraseIndex = 0;
+  let currentCharIndex = 0;
+  let isDeleting = false;
+  const textElement = document.getElementById("typed-text");
+
+  function typeLoop() {
+    const currentPhrase = phrases[currentPhraseIndex];
+
+    if (isDeleting) {
+      textElement.textContent = currentPhrase.substring(0, currentCharIndex--);
+    } else {
+      textElement.textContent = currentPhrase.substring(0, currentCharIndex++);
+    }
+
+    if (!isDeleting && currentCharIndex === currentPhrase.length + 1) {
+      isDeleting = true;
+      setTimeout(typeLoop, 1000); // Pause before deleting
+      return;
+    }
+
+    if (isDeleting && currentCharIndex === 0) {
+      isDeleting = false;
+      currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+    }
+
+    setTimeout(typeLoop, isDeleting ? 50 : 100);
+  }
+
+  document.addEventListener("DOMContentLoaded", typeLoop);
+</script>
+    
+</body>
+</html>
