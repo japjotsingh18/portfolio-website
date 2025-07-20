@@ -4,7 +4,8 @@ Welcome to my personal portfolio website! This project highlights my skills, pro
 
 ## 📸 Preview
 
-![Screenshot](screenshot.png) <!-- Optional: Replace with your actual screenshot image -->
+![Screenshot](./img/preview.png)
+
 
 ---
 
