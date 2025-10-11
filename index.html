@@ -10,6 +10,7 @@
 </head>
 <body>
     <!-- Navigation -->
+    <div class="scroll-progress"></div>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -59,8 +60,11 @@
             <div class="hero-image">
                 <div class="profile-circle">
                     <div class="glow-ring"></div>
-                    <div class="profile-placeholder">
-                        <i class="fas fa-user"></i>
+                    <div class="profile-picture">
+                        <img src="./assets/images/Remove background project 2.jpg" alt="Japjot Singh Profile Picture" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,6 +228,34 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
+                        <h3 class="project-title">TrueTrace</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">Fact-Check</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>AI-powered misinformation detection platform that verifies the credibility of online content in real time using advanced NLP models and trusted fact-checking APIs.</p>
+                    </div>
+                    <div class="project-features">
+                        <ul>
+                            <li>Real-time content credibility analysis</li>
+                            <li>AI-based misinformation pattern detection</li>
+                            <li>Cross-verification using Google Fact Check & NewsAPI</li>
+                            <li>Clean glassmorphism UI with dark theme</li>
+                        </ul>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/japjotsingh18/TrueTrace" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
                         <h3 class="project-title">StudyPal AI</h3>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
@@ -246,10 +278,6 @@
                         <a href="#" class="btn btn-primary">
                             <i class="fab fa-github"></i>
                             GitHub
-                        </a>
-                        <a href="#" class="btn btn-secondary">
-                            <i class="fas fa-external-link-alt"></i>
-                            Live Demo
                         </a>
                     </div>
                 </div>
@@ -596,7 +624,7 @@
                         </div>
                         <div class="contact-details">
                             <h4 class="contact-method">LinkedIn</h4>
-                            <a href="#" class="contact-link" target="_blank">Connect with me</a>
+                            <a href="https://www.linkedin.com/in/japjot-singh-811910281/" class="contact-link" target="_blank">Connect with me</a>
                         </div>
                     </div>
                     
@@ -635,7 +663,7 @@
                 </div>
                 <div class="footer-social">
                     <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/japjot-singh-811910281/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                     <a href="mailto:jsing138@asu.edu" class="social-link"><i class="fas fa-envelope"></i></a>
                 </div>

@@ -25,7 +25,20 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.background = 'rgba(10, 10, 10, 0.95)';
     }
+    
+    // Update scroll progress
+    updateScrollProgress();
 });
+
+// Scroll Progress Indicator
+function updateScrollProgress() {
+    const scrollProgress = document.querySelector('.scroll-progress');
+    if (scrollProgress) {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (window.pageYOffset / totalHeight) * 100;
+        scrollProgress.style.width = progress + '%';
+    }
+}
 
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -334,50 +347,23 @@ function addNewProjectCards(projectsData) {
 
 // Resume Download Function
 function downloadResume() {
-    // Create a simple resume content (in a real scenario, this would be a PDF file)
-    const resumeContent = `
-JAPJOT SINGH
-Computer Science Student | AI & Software Enthusiast
-Email: jsing138@asu.edu | Phone: +1 (623) 273 6288
-
-EDUCATION
-Arizona State University - Computer Science
-GPA: 3.64 | Dean's List | New American University Scholar
-
-SKILLS
-Programming: Java, Python, JavaScript, SQL, HTML, CSS
-Frameworks: ReactJS, Flask, SQLite, Git/GitHub, Chart.js
-Other: Data Structures, Algorithms, OOP, Problem-Solving
-
-PROJECTS
-• StudyPal AI - Productivity web app with AI assistant
-• Parkinson's Glove Project - Anti-tremor glove using FES
-• Empathy_Unites - Social platform promoting veganism
-
-EXPERIENCE
-• Adobe Campus Ambassador (Feb 2025 - Present)
-• Marketing Officer, CS + Social Good @ ASU (Sep 2024 - Present)
-• Event Promoter Intern, Singh Events Pvt. Ltd. (May 2024 - Jul 2024)
-• Communication Lead, EPICS (Aug 2023 - Dec 2023)
-
-CERTIFICATIONS
-• Intel + CBSE: AI for Youth Program
-• Microsoft Learn: Intro to AI Concepts (Jun 2025)
-• Microsoft Learn: Intro to Machine Learning (Jul 2025)
-• AWS Educate: Generative AI Fundamentals (2025)
-    `;
-    
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Japjot_Singh_Resume.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    
-    showNotification('Resume downloaded successfully!', 'success');
+    try {
+        // Create a link element to download the actual resume file
+        const link = document.createElement('a');
+        link.href = './documents/JAPJOTSINGH_resume.docx';
+        link.download = 'JAPJOTSINGH_resume.docx';
+        link.style.display = 'none';
+        
+        // Add to DOM, click, and remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        showNotification('Resume downloaded successfully!', 'success');
+    } catch (error) {
+        console.error('Error downloading resume:', error);
+        showNotification('Error downloading resume. Please try again.', 'error');
+    }
 }
 
 // Active Navigation Link Highlighting
