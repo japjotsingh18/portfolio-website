@@ -1,229 +1,124 @@
-# 🌐 Japjot Singh - Portfolio Website
+# 🌐 Japjot Singh — Portfolio Website
 
-A modern, tech-themed personal portfolio website featuring a futuristic design with dark mode, glowing neon accents, and smooth animations.
+A modern, tech-inspired personal portfolio designed with a futuristic dark theme, neon highlights, smooth animations, and fully responsive layouts. This website showcases my work as a Computer Science student at ASU specializing in AI, software engineering, and full-stack development.
 
-## ✨ Features
+## 🚀 Live Website
 
-### 🎨 Design
-- **Dark Futuristic Theme**: Deep black backgrounds with neon cyan and green accents
-- **Glowing Effects**: Neon text shadows and glowing borders throughout
-- **Smooth Animations**: Hover effects, fade-ins, typewriter text, and card flips
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
-- **Interactive Elements**: Animated particles, matrix-style background, and cursor trails
+**🔗 Visit here:**
+👉 **https://japjotsingh18.github.io/portfolio-website**
 
-### 🔧 Sections
-1. **Hero Section**: Animated name with typewriter effect, subtitle, and call-to-action buttons
-2. **About Me**: Brief bio with animated statistics cards
-3. **Skills**: Interactive glowing skill badges organized by categories
-4. **Projects**: Animated project cards with hover effects and tech tags
-5. **Experience**: Scroll-based timeline with alternating animations
-6. **Certifications**: Interactive certificate cards with rotating border effects
-7. **Contact**: Contact form with glowing input fields and contact information
-8. **Footer**: Social links with hover animations
+## ✨ Key Features
 
-### 🚀 Interactive Features
-- **Loading Screen**: Animated logo and progress bar
-- **Smooth Scrolling**: Navigation with active link highlighting
-- **Mobile Navigation**: Hamburger menu for mobile devices
-- **Form Handling**: Contact form with validation and feedback
-- **Notifications**: Success/error messages with slide animations
-- **Resume Download**: Downloadable resume functionality
-- **Easter Egg**: Konami code activation with special effects
-- **Cursor Trail**: Animated dots following mouse movement
-- **Matrix Background**: Animated digital rain effect
+### 🎨 Futuristic UI/UX
+- Sleek dark theme with neon cyan, green, and purple highlights
+- Glowing effects, animated borders, and hover interactions
+- Smooth micro-animations (typewriter, fade-ins, card transitions)
+- Interactive particle and matrix-style backgrounds
+- Fully responsive for desktop, tablet, and mobile
+
+### 🧩 Organized Portfolio Sections
+- **Hero Section** – Animated typewriter intro with strong branding
+- **About Me** – Bio + animated stats
+- **Skills** – Glowing badges grouped by tech domain
+- **Projects** – Featured apps with live demos
+  - StudyPal AI
+  - BridgeBite
+  - Empathy Unites (in-progress)
+- **Experience** – Timeline of roles, leadership & internships
+- **Certifications** – Intel AI, AWS, Microsoft, Credly badges
+- **Contact** – Email, phone, social media, and resume download
+- **Footer** – Clean navigation + social links
+
+### 🧠 Interactive & Functional
+- Animated loading screen
+- Scroll-spy navigation
+- Smooth scrolling
+- Mobile hamburger menu
+- Resume download (DOCX)
+- External links to projects, certificates & social platforms
+- Performance optimized via lazy loading & GPU-accelerated transitions
 
 ## 📁 Project Structure
 
 ```
-portfolio_website/
-├── index.html          # Main HTML file
-├── styles.css          # Complete CSS with animations and responsive design
-├── script.js           # JavaScript for interactivity and animations
-└── README.md           # Project documentation
+portfolio-website/
+│── index.html
+│── styles.css
+│── script.js
+│── assets/
+│   └── images/
+│── documents/
+│   └── New_japjotSingh_resume.docx
+│── BridgeBite_PitchDeck.pdf
+│── intel.pdf
+└── README.md
 ```
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **HTML5**: Semantic markup and accessibility features
-- **CSS3**: Advanced animations, transitions, and responsive design
-- **JavaScript ES6+**: Modern JavaScript with DOM manipulation and animations
-- **Font Awesome**: Icons for social links and buttons
-- **Google Fonts**: Poppins, Orbitron, and Montserrat font families
+### Frontend
+- **HTML5** (semantic, accessible)
+- **CSS3** (Grid/Flexbox, animations, neon theme)
+- **JavaScript (ES6+)** (scroll animations, DOM interactions)
+
+### Libraries & Integrations
+- **Font Awesome 6**
+- **Google Fonts** (Poppins, Orbitron, Montserrat)
+- **Credly** (certification badges)
+- **GitHub Pages** (deployment)
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- A code editor (VS Code, Sublime Text, etc.)
-- Optional: Live Server extension for development
-
-### Installation
-
-1. **Clone or Download**: Get the project files to your local machine
-2. **Open in Browser**: Double-click `index.html` or use a live server
-3. **Customize**: Edit the content to match your information
-
-### Development Setup
-
-1. **Open in VS Code**:
+### Quick Start
+1. **View Live**: Visit [japjotsingh18.github.io/portfolio-website](https://japjotsingh18.github.io/portfolio-website)
+2. **Clone Repository**:
    ```bash
-   cd portfolio_website
-   code .
+   git clone https://github.com/japjotsingh18/portfolio-website.git
+   cd portfolio-website
    ```
-
-2. **Install Live Server Extension** (Optional):
-   - Go to Extensions in VS Code
-   - Search for "Live Server"
-   - Install and reload VS Code
-
-3. **Start Development Server**:
-   - Right-click on `index.html`
-   - Select "Open with Live Server"
-   - Your browser will open with live reload enabled
-
-## 🎯 Customization Guide
-
-### Personal Information
-Edit the following sections in `index.html`:
-
-1. **Hero Section**:
-   - Change name in `.hero-name`
-   - Update subtitle and tagline
-   - Modify button links
-
-2. **About Section**:
-   - Replace bio text with your information
-   - Update GPA and statistics
-
-3. **Skills Section**:
-   - Add/remove skill badges
-   - Update categories as needed
-   - Modify icons (Font Awesome classes)
-
-4. **Projects Section**:
-   - Replace project information
-   - Update GitHub/demo links
-   - Modify tech tags
-
-5. **Experience Section**:
-   - Update timeline items with your experience
-   - Modify dates and descriptions
-
-6. **Certifications Section**:
-   - Add your certifications
-   - Update certificate links
-   - Modify completion dates
-
-7. **Contact Section**:
-   - Update email and phone number
-   - Add your LinkedIn URL
-   - Modify social media links
-
-### Color Scheme
-Modify CSS custom properties in `styles.css`:
-
-```css
-:root {
-    --accent-cyan: #00ffff;      /* Primary neon color */
-    --accent-green: #00ff88;     /* Secondary neon color */
-    --accent-purple: #8b5cf6;    /* Tertiary accent */
-    --bg-primary: #0a0a0a;       /* Main background */
-    --bg-secondary: #111111;     /* Card backgrounds */
-    --text-primary: #ffffff;     /* Main text color */
-}
-```
-
-### Fonts
-Update font imports in `index.html` head section:
-```html
-<link href="https://fonts.googleapis.com/css2?family=YourFont:wght@weights&display=swap" rel="stylesheet">
-```
-
-### Resume Download
-Update the `downloadResume()` function in `script.js`:
-- Replace with actual PDF file path
-- Modify resume content
-- Update filename
-
-### Contact Form
-To make the contact form functional:
-1. Add form handling backend (PHP, Node.js, etc.)
-2. Update form action and method
-3. Modify the submit handler in `script.js`
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
-- **Small Mobile**: Below 480px
-
-## 🎨 Animation Details
-
-### CSS Animations
-- **Typewriter Effect**: Blinking cursor animation
-- **Particle Float**: Floating background particles
-- **Matrix Rain**: Digital rain background effect
-- **Glow Effects**: Pulsing neon glows
-- **Hover Transforms**: Scale and translate effects
-
-### JavaScript Animations
-- **Scroll Animations**: Intersection Observer API
-- **Typewriter Text**: Character-by-character typing
-- **Stats Counter**: Animated number counting
-- **Smooth Scrolling**: Enhanced navigation
-- **Loading Screen**: Progress bar and fade effects
-
-## 🔧 Performance Optimizations
-
-- **Lazy Loading**: Images and animations load when needed
-- **CSS Animations**: Hardware-accelerated transforms
-- **Intersection Observer**: Efficient scroll-based animations
-- **Debounced Events**: Optimized scroll and resize handlers
-- **Page Visibility API**: Pause animations when tab is hidden
-
-## 🎮 Easter Eggs
-
-- **Konami Code**: Enter the classic cheat code (↑↑↓↓←→←→BA) for a surprise
-- **Cursor Trail**: Interactive mouse trail effect
-- **Matrix Rain**: Hidden digital rain animation
-- **Loading Screen**: Animated portfolio initialization
+3. **Local Development**:
+   ```bash
+   # Option 1: Python server
+   python3 -m http.server 8000
+   
+   # Option 2: VS Code Live Server extension
+   # Right-click index.html → "Open with Live Server"
+   ```
 
 ## 🚀 Deployment Options
 
-### GitHub Pages
-1. Create a GitHub repository
-2. Upload all files
-3. Enable GitHub Pages in repository settings
-4. Access via `https://yourusername.github.io/repository-name`
+### GitHub Pages (Current)
+✅ **Already Deployed**: [japjotsingh18.github.io/portfolio-website](https://japjotsingh18.github.io/portfolio-website)
 
-### Netlify
-1. Create account at netlify.com
-2. Drag and drop project folder
-3. Get instant deployment with custom domain options
+### Alternative Options
+- **Netlify**: Drag and drop deployment
+- **Vercel**: Connect GitHub repository for automatic deployments
 
-### Vercel
-1. Create account at vercel.com
-2. Connect GitHub repository
-3. Automatic deployments on code changes
+## 💬 Contact
 
-## 📧 Contact & Support
+Reach out anytime—open to collaborations, project ideas, and networking!
 
-For questions or customization help:
-- **Email**: jsing138@asu.edu
-- **Phone**: +1 (623) 273 6288
+- **📧 Email**: [jsing138@asu.edu](mailto:jsing138@asu.edu)
+- **📱 Phone**: [+1 (623) 273-6288](tel:+16232736288)
+- **🔗 LinkedIn**: [https://www.linkedin.com/in/japjot-singh-811910281/](https://www.linkedin.com/in/japjot-singh-811910281/)
+- **💻 GitHub**: [https://github.com/japjotsingh18](https://github.com/japjotsingh18)
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- **Font Awesome** for icons
-- **Google Fonts** for typography
-- **CSS-Tricks** for animation inspiration
-- **MDN Web Docs** for technical reference
+Licensed under the MIT License.
 
 ---
 
-**Built with 💻 and creativity by Japjot Singh**
+<div align="center">
+
+**🚀 Built with 💻 and creativity by [Japjot Singh](https://japjotsingh18.github.io/portfolio-website)**
+
+*Computer Science Student | AI Enthusiast | Future Software Engineer*
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00ffff?style=flat-square&logo=github)](https://japjotsingh18.github.io/portfolio-website)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-00ff88?style=flat-square&logo=github)](https://github.com/japjotsingh18)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/japjot-singh-811910281/)
+
+⭐ **Star this repo if you found it helpful!** ⭐
+
+</div>
